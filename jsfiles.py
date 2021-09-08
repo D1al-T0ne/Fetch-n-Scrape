@@ -1,20 +1,20 @@
 #!/usr/bin/env python
 
 import re
+import sys
 
+def jsfiles(fileName):
 
-def jsfiles():
-
-	with open("raw-gau-data.txt") as f:
+	with open(fileName) as f:
 		urls = f.readlines()
 		regex = re.compile('\.js$')
 		jsurls = list(filter(regex.search, urls))
-		return(jsurls)
+		with open("js-links.txt", "w") as js:
+			[js.write(jsurl) for jsurl in jsurls]
 
 def main():
 	
-	with open ("python-js-links.txt", "w") as w:
-		links = w.writelines(jsfiles())
+	jsfiles("gau-data.txt")
 
 if __name__ == "__main__":
 	main()
