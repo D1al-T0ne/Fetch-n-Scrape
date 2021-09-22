@@ -3,7 +3,7 @@
 import re
 
 # Import pattern wordlist
-with open("rce.txt") as r:
+with open("./Patterns/rce.txt") as r:
 	patterns_list = [pattern.strip() for pattern in r]
 	patterns = re.compile(r'\b(?:%s)\b' % '|'.join(patterns_list))
 
