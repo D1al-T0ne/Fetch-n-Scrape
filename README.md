@@ -5,8 +5,6 @@ These are works in progress to help me learn Python, and maybe lead to something
 ### About
 cname.py - A simple dns resolver, checking if a hostname resolves to an A or CNAME record and provides the IP.
 
-gau.py - A wrapper around gau that stores data to a file removing duplicates retrieved from gau.
-
 href.py - Takes in a file of URLs and creates clickable links.
 
 jsfiles.py - A quick function to extract .js files from a file.
