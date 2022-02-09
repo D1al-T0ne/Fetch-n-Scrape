@@ -15,7 +15,7 @@ def main():
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("-f", "--filename", help="Provide the filename of subdomain names to be converted", required =True)
+    parser.add_argument("-f", "--filename", help="Input file containing hostnames to process", required =True)
 
     args = parser.parse_args()
 
