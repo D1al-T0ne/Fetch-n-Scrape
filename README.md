@@ -7,7 +7,7 @@ Scripts
 ------
 gbjs.py - Fetches, .js URL links and saves them while beautifying them.
 
-jsfiles.py - A quick function to extract .js URLs from a list of URLs.
+js-links.py - A quick function to extract .js URLs from a list of URLs.
 
 link-maker.py - Takes in a file of hostnames, URLs or IPs and creates an HTML page with clickable links.
 
